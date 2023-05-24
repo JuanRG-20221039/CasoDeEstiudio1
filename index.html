@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Conferencia sobre Desarrollo Web</h1>
+    </header>
+    <p class="sub">A continuación ingrese los datos correspondientes en cada casilla para realizar el registro de asistencia a la conferencia </p>
+    <form action="./formulario.html" method="post" name="Enviar">
+        <fieldset>
+            <legend>Formulario de regisgro</legend>
+            <br>
+            <label for="name">Ingrese su nombre completo:</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+            <br>
+            <label for="edad">Ingrese su edad: *</label>
+            <input type="text" name="edad" id="edad" placeholder="Edad">
+            <br>
+            <label for="mail">Ingrese su correo electronico:</label>
+            <input type="text" name="mail" id="mail" placeholder="Correo electronico">
+            <br>
+            <label for="work">Seleccione su ocupación:</label>
+            <select name="ocupación" id="work">
+                <option value="work">Ninguna</option>
+                <option value="work">Diseñador</option>
+                <option value="work">Desarrollador</option>
+                <option value="work">Front-End</option>
+                <option value="work">Back-End</option>
+            </select>
+            <br>
+            <label for="talla">Seleccione su talla de camiseta:</label>
+            <input type="radio" name="1" id="talla" value="S">S
+            <input type="radio" name="1" id="talla" value="M">M
+            <input type="radio" name="1" id="talla" value="L">L
+            <input type="radio" name="1" id="talla" value="XL">XL
+            <br>
+            <label for="color">Seleccione el color de su camiseta: *</label>
+            <input type="radio" name="1" id="negra">Negra
+            <input type="radio" name="1" id="blanca">Blanca
+            <br>
+            <label for="dieta">Seleccione su preferencia dietética:</label>
+
+            <label for="vegetariano">vegetariano</label>
+            <input type="checkbox" name="1" id="dieta">
+
+            <label for="vegano">vegano</label>
+            <input type="checkbox" name="1" id="dieta">
+
+            <label for="sin gluten">sin gluten</label>
+            <input type="checkbox" name="1" id="dieta">
+
+            <label for="sin restricciones">sin restricciones</label>
+            <input type="checkbox" name="1" id="dieta">
+            <br>
+            <label for="bebidas">Seleccione el tipo de bebida que es de su preferencia: *</label>
+            <select name="bebida" id="drink">
+                <option value="drink">Sin azucar</option>
+                <option value="drink">Azucaradas</option>
+            </select>
+            <br>
+            <label for="exp">Cuales son sus expectativas sobre la conferencia: *</label>
+            <input type="radio" name="1" id="exp">Altas
+            <input type="radio" name="1" id="exp">Bajas
+            <input type="radio" name="1" id="exp">Promedio
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <footer>
+        Conferencia Web | 2023
+    </footer>
+</body>
+</html>
